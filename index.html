@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magic Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Magic Blog</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+    <section id="home" class="article">
+      <img src="https://source.unsplash.com/1200x400/?magic" alt="Magic Image">
+      <h2>2025 Magic Blog Headliner</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <a href="#">Read more</a>
+    </section>
+
+    <aside class="sidebar">
+      <div>
+        <h3>Advertisement</h3>
+        <p>Place your ad here!</p>
+      </div>
+      <div>
+        <h3>Related Articles</h3>
+        <p>Lorem ipsum...</p>
+        <a href="#">Read more</a>
+      </div>
+    </aside>
+
+    <section id="shop" class="shop">
+      <h2>Shop Our Products</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://via.placeholder.com/150" alt="Product 1">
+          <h3>Product 1</h3>
+          <p>$19.99</p>
+          <button class="add-to-cart" data-id="1" data-name="Product 1" data-price="19.99">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/150" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>$29.99</p>
+          <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="29.99">Add to Cart</button>
+        </div>
+      </div>
+      <div id="cart" class="cart">
+        <h3>Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout">Checkout</button>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <p>&copy; 2024 Magic Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
