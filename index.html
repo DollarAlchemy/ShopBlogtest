@@ -21,6 +21,33 @@
       </nav>
     </div>
   </header>
+
+  <!-- Table of Contents Widget -->
+  <div id="toc-widget" class="toc-widget">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li>
+        <strong>Category 1</strong>
+        <ul>
+          <li>Topic A
+            <ul>
+              <li>Subject A1</li>
+              <li>Subject A2</li>
+            </ul>
+          </li>
+          <li>Topic B</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Category 2</strong>
+        <ul>
+          <li>Topic C</li>
+          <li>Topic D</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <button id="toc-tab" class="toc-tab">Table of Contents</button>
   
   <main class="container">
     <section id="home" class="article">
@@ -45,13 +72,13 @@
     <section id="shop" class="shop">
       <h2>Shop Our Products</h2>
       <div class="product-grid">
-        <div class="product">
+        <div class="product" id="product1">
           <img src="https://via.placeholder.com/150" alt="Product 1">
           <h3>Product 1</h3>
           <p>$19.99</p>
           <button class="add-to-cart" data-id="1" data-name="Product 1" data-price="19.99">Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="product" id="product2">
           <img src="https://via.placeholder.com/150" alt="Product 2">
           <h3>Product 2</h3>
           <p>$29.99</p>
@@ -66,7 +93,16 @@
       </div>
     </section>
   </main>
-  
+
+  <!-- Shop Widget -->
+  <div id="shop-widget" class="shop-widget">
+    <h3>Popular Products</h3>
+    <ul>
+      <li><a href="#product1">Product 1</a></li>
+      <li><a href="#product2">Product 2</a></li>
+    </ul>
+  </div>
+
   <footer class="footer">
     <p>&copy; 2024 Magic Blog. All rights reserved.</p>
   </footer>
