@@ -16,6 +16,27 @@ themeToggle.addEventListener('click', () => {
   themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
 
+// Table of Contents Toggle
+const tocWidget = document.getElementById('toc-widget');
+const tocTab = document.getElementById('toc-tab');
+
+tocTab.addEventListener('click', () => {
+  // Toggle active class for Table of Contents
+  tocWidget.classList.toggle('active');
+  tocTab.classList.toggle('active');
+});
+
+// Scroll to product on Shop Widget click
+document.querySelectorAll('.shop-widget ul li a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
 // Cart Logic
 const cart = [];
 const cartItemsElement = document.getElementById('cart-items');
